@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .lbl{
+            display: inline-block;
+            width: 30%;
+            
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .fld1{
+            width: 50%;
+            height: max-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteneur">
+        <fieldset class="fld">
+            <form method="POST"  action="#">
+                <label for="" class="lbl" >Entrer le nom d'utilisateur</label>
+                <input type="text" name="nom" placeholder="entrer votre nom ">
+                <br>
+                <label for="" class="lbl" >Votre mot de passe</label>
+                <input type="password" name="mdp" placeholder="Entrer votre Mot de passe">
+                <br>
+                <label for="" class="lbl">votre profession</label>
+                <select name="liste" id="">
+                    <option value="">agent immobilier</option>
+                    <option value="">architecte</option>
+                    <option value="">commerce et artisanat</option>
+                </select>
+                <label for="" class="lbl" >votre Pays</label>
+                <select name="pays" id="">
+                    <option value="">votre choix...</option>
+                    <option value="">maroc</option>
+                    <option value="">france</option>
+                    <option value="">italie</option>
+                </select>
+                <br>
+                <label for="" class="lbl">Votre Sex</label>
+                
+                <span>M:</span>
+                <input type="radio" name="gender">
+                <span>F:</span>
+                <input type="radio" name="gender">
+                <br>
+                <label for="" class="lbl">votre langue</label>
+                <select name="langue" id="">
+                    <option value="">arabe</option>
+                    <option value="">anglais</option>
+                    <option value="">espagnole</option>
+                    <option value="">francais</option>
+                </select>
+                <br>
+                <label class="lbl">votre loisir</label>
+                
+                <fieldset class="fld1">
+                    <label for="" class="lbl2">sport</label>
+                    <input type="checkbox" name="loisir" >
+                    <label for="" class="lbl2">Music</label>
+                    <input type="checkbox" name="loisir" >
+                    <label for="" class="lbl2">Internet</label>
+                    <input type="checkbox" name="loisir" >
+                    <label for="" class="lbl2" >Voyage</label>
+                    <input type="checkbox" name="loisir" >
+                    <label for="" class="lbl2">Lecture</label>
+                    <input type="checkbox" name="loisir" >
+                    <label for="" class="lbl2">Autre</label>
+                    <input type="checkbox" name="loisir" >
+                </fieldset>
+                <div class="btn">
+                <input type="submit" value="Envoyer" class="btn1">
+                <input type="reset" value="retablir" class="btn1">
+
+                </div>
+                
+            </form>
+        </fieldset>
+        
+        
+            
+
+        
+        
+    </div>
+    
+</body>
+</html>
